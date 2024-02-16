@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="318.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.supermarket.controller.ItemFormController">
+    <children>
+        <Label layoutX="189.0" layoutY="21.0" prefHeight="40.0" prefWidth="260.0" text="Item Form" textFill="#010302">
+            <font>
+                <Font name="System Bold" size="29.0" />
+            </font>
+        </Label>
+        <TextField layoutX="24.0" layoutY="107.0" prefHeight="34.0" prefWidth="222.0" promptText="Code" />
+        <TextField layoutX="287.0" layoutY="107.0" prefHeight="34.0" prefWidth="222.0" promptText="Description" />
+        <TextField layoutX="24.0" layoutY="183.0" prefHeight="34.0" prefWidth="222.0" promptText="Qty" />
+        <TextField layoutX="287.0" layoutY="183.0" prefHeight="34.0" prefWidth="222.0" promptText="Unit Price" />
+        <JFXButton buttonType="RAISED" layoutX="434.0" layoutY="251.0" prefHeight="40.0" prefWidth="71.0" style="-fx-background-color: #74b9ff;" text="Save" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="335.0" layoutY="251.0" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #ffeaa7;" text="Cancel" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+        </JFXButton>
+    </children>
+</AnchorPane>

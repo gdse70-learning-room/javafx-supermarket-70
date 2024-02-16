@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="442.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.supermarket.controller.CustomerFormController">
+    <children>
+        <Label layoutX="164.0" layoutY="20.0" prefHeight="40.0" prefWidth="260.0" text="Customer Form" textFill="#010302">
+            <font>
+                <Font name="System Bold" size="29.0" />
+            </font>
+        </Label>
+        <TextField layoutX="25.0" layoutY="60.0" prefHeight="34.0" prefWidth="222.0" promptText="Id" />
+        <TextField layoutX="288.0" layoutY="60.0" prefHeight="34.0" prefWidth="222.0" promptText="Name" />
+        <TextField layoutX="25.0" layoutY="107.0" prefHeight="34.0" prefWidth="222.0" promptText="Address" />
+        <TextField layoutX="288.0" layoutY="107.0" prefHeight="34.0" prefWidth="222.0" promptText="Tel" />
+        <JFXButton buttonType="RAISED" layoutX="438.0" layoutY="153.0" prefHeight="40.0" prefWidth="71.0" style="-fx-background-color: #74b9ff;" text="Save" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="339.0" layoutY="153.0" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #ffeaa7;" text="Cancel" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+        </JFXButton>
+        <TableView fx:id="tblCustomer" layoutX="25.0" layoutY="215.0" prefHeight="200.0" prefWidth="483.0">
+            <columns>
+                <TableColumn fx:id="colName" prefWidth="123.0" text="Name" />
+                <TableColumn fx:id="colAddress" prefWidth="212.0" text="Address" />
+                <TableColumn fx:id="colTel" prefWidth="94.0" text="Tel" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

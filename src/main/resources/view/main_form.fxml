@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="485.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.supermarket.controller.MainFormController">
+<AnchorPane fx:id="root" prefHeight="485.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.supermarket.controller.MainFormController">
    <children>
       <VBox layoutY="133.0" prefHeight="234.0" prefWidth="146.0">
          <children>
@@ -74,5 +74,6 @@
             </JFXButton>
          </children>
       </VBox>
+      <AnchorPane fx:id="centerNode" layoutX="146.0" layoutY="43.0" prefHeight="442.0" prefWidth="530.0" />
    </children>
 </AnchorPane>
